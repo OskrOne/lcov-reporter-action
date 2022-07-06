@@ -9,7 +9,6 @@ export function tabulate(lcov, options) {
 		th("Branches"),
 		th("Funcs"),
 		th("Lines"),
-		th("Uncovered Lines"),
 	)
 
 	const folders = {}
@@ -83,7 +82,6 @@ function toRow(file, indent, options) {
 		td(percentage(file.branches, options)),
 		td(percentage(file.functions, options)),
 		td(percentage(file.lines, options)),
-		td(uncovered(file, options)),
 	)
 }
 
