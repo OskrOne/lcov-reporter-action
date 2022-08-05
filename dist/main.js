@@ -23111,5 +23111,5 @@ async function main$1() {
 
 main$1().catch(function(err) {
 	console.log(err);
-	core$1.setFailed(err.message);
+	core$1.warning('Adding Code Coverage to the PR went wrong, but it\'s not bad enough to fail the build.');
 });

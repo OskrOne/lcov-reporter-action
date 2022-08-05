@@ -83,5 +83,5 @@ async function main() {
 
 main().catch(function(err) {
 	console.log(err)
-	core.setFailed(err.message)
+	core.warning('Adding Code Coverage to the PR went wrong, but it\'s not bad enough to fail the build.')
 })
